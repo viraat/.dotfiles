@@ -22,7 +22,7 @@ echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
+# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
     mv ~/$file ~/dotfiles_old/
@@ -32,7 +32,7 @@ done
 
 source ~/.bashrc
 
-#ln -sv "~/.dotfiles/.bash_profile" ~/.bash_profile
-#ln -sv "~/.dotfiles/.bashrc" ~/.bashrc
-#ln -sv "~/.dotfiles/.bash_aliases" ~/.bash_aliases
-#ln -sv "~/.dotfiles/.inputrc" ~/.inputrc
+ln -sv "~/.dotfiles/.bash_profile" ~/.bash_profile
+ln -sv "~/.dotfiles/.bashrc" ~/.bashrc
+ln -sv "~/.dotfiles/.bash_aliases" ~/.bash_aliases
+ln -sv "~/.dotfiles/.inputrc" ~/.inputrc
