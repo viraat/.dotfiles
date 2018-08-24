@@ -1,7 +1,7 @@
 export JAVA_HOME=$(/usr/libexec/java_home)
 export JDK_HOME=$(/usr/libexec/java_home)
 
-export PATH=${PATH}:/Users/var/Development/android-sdk/platform-tools
+export PATH=${PATH}:/Users/aryabumi/Development/android-sdk/platform-tools
 
 
 # Setting PATH for Python 2.7
@@ -11,14 +11,14 @@ export PATH
 
 #Setting colors for bash and making it look pretty
 [[ -s ~/.bashrc ]] && source ~/.bashrc && source ~/.bash_aliases
- 
+
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
- 
+
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -FGh'
 alias ll='ls -FGlAhp'
- 
+
 function prompt {
   local BLACK="\[\033[0;30m\]"
   local BLACKBOLD="\[\033[1;30m\]"
@@ -37,17 +37,17 @@ function prompt {
   local WHITE="\[\033[0;37m\]"
   local WHITEBOLD="\[\033[1;37m\]"
   local RESETCOLOR="\[\e[00m\]"
- 
+
   export PS1="\n$RED\u $PURPLE@ $GREEN\w\n $BLUE[\#] → $RESETCOLOR"
   export PS2="| → $RESETCOLOR"
 }
- 
+
 prompt
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # added by Anaconda2 2.5.0 installer
-export PATH="/Users/var/anaconda/bin:$PATH"
+export PATH="/Users/aryabumi/anaconda/bin:$PATH"
 #alias octave="`which octave`; exit"
 export FONTCONFIG_PATH="/opt/X11/lib/X11/fontconfig"
 
@@ -57,8 +57,8 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
 
 # added by Anaconda2 4.1.1 installer
-export PATH="/Users/var/anaconda/bin:$PATH"
-export PATH=/Users/var/anaconda/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/Users/var/anaconda/bin:/Users/var/.rvm/gems/ruby-2.1.1/bin:/Users/var/.rvm/gems/ruby-2.1.1@global/bin:/Users/var/.rvm/rubies/ruby-2.1.1/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Users/var/Development/android-sdk/platform-tools:/Users/var/.rvm/bin:~/Google\ Drive/Courses/nand2tetris/tools
+export PATH="/Users/aryabumi/anaconda/bin:$PATH"
+export PATH=/Users/aryabumi/anaconda/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/Users/aryabumi/anaconda/bin:/Users/aryabumi/.rvm/gems/ruby-2.1.1/bin:/Users/aryabumi/.rvm/gems/ruby-2.1.1@global/bin:/Users/aryabumi/.rvm/rubies/ruby-2.1.1/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Users/aryabumi/Development/android-sdk/platform-tools:/Users/aryabumi/.rvm/bin:~/Google\ Drive/Courses/nand2tetris/tools
 export CLASSPATH=/Applications/weka-3-8-1/weka.jar:~/Google\ Drive/Courses/nand2tetris/tools
 
 export LATEX_HOME=/Library/TeX/texbin
@@ -66,7 +66,7 @@ export PATH=${PATH}:$LATEX_HOME
 
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/var/Development/google-cloud-sdk/path.bash.inc' ]; then source '/Users/var/Development/google-cloud-sdk/path.bash.inc'; fi
+if [ -f '/Users/aryabumi/Development/google-cloud-sdk/path.bash.inc' ]; then source '/Users/aryabumi/Development/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/var/Development/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/var/Development/google-cloud-sdk/completion.bash.inc'; fi
+if [ -f '/Users/aryabumi/Development/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/aryabumi/Development/google-cloud-sdk/completion.bash.inc'; fi
