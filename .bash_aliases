@@ -47,6 +47,7 @@ alias courses='cd ~/Google\ Drive/Courses/'
 alias dev='cd ~/Development/'
 alias fairness='cd ~/Development/\[UOE\]Fairness/ && source activate pytorch'
 alias fastai='cd ~/Development/fastai/courses/dl1 && source activate fastai-cpu'
+alias fellowship='cd ~/Development/fellowshipai/ && source activate fastai-cpu'
 
 #   -----------------------------
 #   4. PERSONAL ALIASES
