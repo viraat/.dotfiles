@@ -21,7 +21,7 @@ function prompt {
   local RESETCOLOR="\[\e[00m\]"
 
   export PS1="\n$RED\u$PURPLE@\h:$GREEN\w\n $BLUE[\#] $ $RESETCOLOR"
-  export PS2="| $ $RESETCOLOR"
+  export PS2="   $BLUE| $ $RESETCOLOR"
 }
 
 prompt
