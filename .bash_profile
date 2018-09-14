@@ -12,22 +12,14 @@ export PATH
 #Setting colors for bash and making it look pretty
 [[ -s ~/.bashrc ]] && source ~/.bashrc && source ~/.bash_aliases
 
-
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 export FONTCONFIG_PATH="/opt/X11/lib/X11/fontconfig"
 
 # Setting PATH for Python 3.5
 # The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
-export PATH
-
-export CLASSPATH=/Applications/weka-3-8-1/weka.jar:~/Google\ Drive/Courses/nand2tetris/tools
-
 export LATEX_HOME=/Library/TeX/texbin
 export PATH=${PATH}:$LATEX_HOME
-
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/aryabumi/Development/google-cloud-sdk/path.bash.inc' ]; then source '/Users/aryabumi/Development/google-cloud-sdk/path.bash.inc'; fi
