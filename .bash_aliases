@@ -1,6 +1,3 @@
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-
 function prompt {
   local BLACK="\[\033[0;30m\]"
   local BLACKBOLD="\[\033[1;30m\]"
@@ -26,6 +23,9 @@ function prompt {
 
 prompt
 
+# make ls colorful
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
 #   -----------------------------
 #   2. MAKE TERMINAL BETTER
 #   -----------------------------
@@ -33,13 +33,13 @@ prompt
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
-alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
-alias ls='ls -FGh'
+alias ll='ls -FGlAhp --color'               # Preferred 'ls' implementation
+alias ls='ls -FGh --color'
 alias less='less -FSRXc'                    # Preferred 'less' implementation
 cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
-alias .2='cd ../../'                       # Go back 2 directory levels
+alias .2='cd ../../'                        # Go back 2 directory levels
 alias .3='cd ../../../'                     # Go back 3 directory levels
 alias .4='cd ../../../../'                  # Go back 4 directory levels
 alias .5='cd ../../../../../'               # Go back 5 directory levels
