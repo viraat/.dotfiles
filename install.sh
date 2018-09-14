@@ -25,14 +25,14 @@ echo "...done"
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/$file ~/dotfiles_old/
+    mv ~/$file $olddir
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/$file
 done
 
 source ~/.bashrc
 
-ln -sv "~/.dotfiles/.bash_profile" ~/.bash_profile
-ln -sv "~/.dotfiles/.bashrc" ~/.bashrc
-ln -sv "~/.dotfiles/.bash_aliases" ~/.bash_aliases
-ln -sv "~/.dotfiles/.inputrc" ~/.inputrc
+ln -sv "$dir/.bash_profile" ~/.bash_profile
+ln -sv "$dir/.bashrc" ~/.bashrc
+ln -sv "$dir/.bash_aliases" ~/.bash_aliases
+ln -sv "$dir/.inputrc" ~/.inputrc
