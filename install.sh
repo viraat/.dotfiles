@@ -31,8 +31,3 @@ for file in $files; do
 done
 
 source ~/.bashrc
-
-ln -sv "$dir/.bash_profile" ~/.bash_profile
-ln -sv "$dir/.bashrc" ~/.bashrc
-ln -sv "$dir/.bash_aliases" ~/.bash_aliases
-ln -sv "$dir/.inputrc" ~/.inputrc
