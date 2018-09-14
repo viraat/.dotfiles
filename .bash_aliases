@@ -23,9 +23,6 @@ function prompt {
 
 prompt
 
-# make ls colorful
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
 #   -----------------------------
 #   2. MAKE TERMINAL BETTER
 #   -----------------------------
@@ -33,8 +30,8 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
-alias ll='ls -FGlAhp --color'               # Preferred 'ls' implementation
-alias ls='ls -FGh --color'
+alias ll='ls -FGlAhp '               # Preferred 'ls' implementation
+alias ls='ls -FGh'
 alias less='less -FSRXc'                    # Preferred 'less' implementation
 cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
