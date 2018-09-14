@@ -23,6 +23,8 @@ function prompt {
 
 prompt
 
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
 #   -----------------------------
 #   2. MAKE TERMINAL BETTER
 #   -----------------------------
