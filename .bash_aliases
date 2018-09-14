@@ -58,5 +58,5 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
 #   -----------------------------
 alias jpl='jupyter lab'
 alias jpn='jupyter notebook'
-alias jpl9000='jupter lab --port 9000 --no-browser'
+alias jpl9000='jupyter lab --port 9000 --no-browser'
 alias deactivate='source deactivate'
