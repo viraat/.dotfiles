@@ -9,7 +9,7 @@
 dir=~/.dotfiles                    # dotfiles directory
 olddir=~/.dotfiles_old             # old dotfiles backup directory
 files=".bashrc .inputrc .bash_aliases .screenrc"    	  # list of files/folders to symlink in homedir
-
+local_files=".bash_alias_local"
 ##########
 
 # create dotfiles_old in homedir
@@ -28,6 +28,18 @@ for file in $files; do
     mv ~/$file $olddir
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/$file
+done
+
+for file in $local_files; do
+    
+    if [ -f $dir/$file ]; then
+        echo "$file exists"
+        echo "Moving any existing dotfiles from ~ to $olddir"
+        mv ~/$file $olddir
+        echo "Creating symlink to $file in home directory."
+        ln -s $dir/$file ~/$file
+    fi
+    echo "$file does not exist"
 done
 
 source ~/.bashrc
