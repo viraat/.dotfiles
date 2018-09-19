@@ -8,8 +8,8 @@
 
 dir=~/.dotfiles                    # dotfiles directory
 olddir=~/.dotfiles_old             # old dotfiles backup directory
-files=".bashrc .inputrc .bash_aliases .screenrc"    	  # list of files/folders to symlink in homedir
-local_files=".bash_alias_local"
+files=".bashrc .inputrc .bash_aliases .screenrc .dircolors .tmux.conf"    	  # list of files/folders to symlink in homedir
+local_files=".bash_alias_local .tmux.conf.local"
 ##########
 
 # create dotfiles_old in homedir
@@ -31,7 +31,6 @@ for file in $files; do
 done
 
 for file in $local_files; do
-    
     if [ -f $dir/$file ]; then
         echo "$file exists"
         echo "Moving any existing dotfiles from ~ to $olddir"
