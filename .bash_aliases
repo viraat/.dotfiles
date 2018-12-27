@@ -60,3 +60,9 @@ alias jpl='jupyter lab'
 alias jpn='jupyter notebook'
 alias jpl9000='jupyter lab --port 9000 --no-browser'
 alias deactivate='source deactivate'
+
+#   -----------------------------
+#   lsix ALIASES
+#   -----------------------------
+alias lsix='bash ~/.dotfiles/lsix/lsix'
+alias imgcat='bash ~/.dotfiles/imgcat'
